@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<!-- Brandon Deaton
+     November 14, 2022 -->
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <meta name="author" content="Brandon Deaton" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Brandon Deaton web developer Boise Idaho" />
+    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        div {
+            margin: 10px;
+        }
+
+        label {
+            margin-right: 15px;
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:brandondeaton@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+        <legend>How do I contact you?</legend>
+            <!-- Company Select Box, page 97 -->
+            <div>
+              <label for="company_name">Company:</label><br>
+              <input type="text" name="company_name" id="company_name" placeholder="Big Tech Company">
+            </div>
+            <!-- Person to Contact Select Box, page 97 -->
+            <div>
+              <label for="contact_name">Person to contact:</label><br>
+              <input type="text" name="contact_name" id="contact_name" placeholder="Mary Wright">
+            </div>
+            <!-- Email, textbook file rental.html -->	
+            <!--Video 9.9 Building and Testing a Valid Form-->	
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="mwright@bigtech.com" required>
+            </div>
+            <!-- Phone, textbook file rental.html-->
+            <!--Video 9.9 Building and Testing a Valid Form-->
+            <div>
+              <label for="phone">Phone Number:</label>
+              <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="208-111-1111">
+            </div>
+        </fieldset>
+
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+            <legend>What opportunities are available at your company?</legend>
+            <div>
+              <label for="position">Type of position:</label>
+              <select name="next-position" id="next-position">
+              <option value="internship">Internship</option>
+              <option value="contract">Contract</option>
+              <option value="temp">Temporary</option>
+              <option value="part-time">Part-Time</option>
+              <option value="full-time">Full-Time</option>
+              </select>
+            </div>
+
+            <div>
+              <p>How did you find me?</p>
+              <input type="radio" name="location" id="linkedin" value="LinkedIn"> 
+              <label for="linkedin">LinkedIn</label>
+              <input type="radio" name="location" id="job-fair" value="Job Fair">
+              <label for="Job Fair">Job Fair</label>
+              <input type="radio" name="location" id="CWI-partner" value="CWI Corporate Partner">
+              <label for="CWI Corporate Partner">CWI Corporate Partner</label>
+            </div>
+
+            <div>
+                <textarea name="comments" placeholder="Do you have any questions/comments?" required></textarea>
+            </div>
+        </fieldset>
+		<input type="submit" id="submit" value="Submit" class="btn">
+     </form>
+</body>
+</html>
