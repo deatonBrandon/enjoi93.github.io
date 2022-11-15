@@ -1,0 +1,8 @@
+/* Practice CustomFonts Style Sheet */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap');
+.websafe{
+    font-family: 'Dancing Script', cursive;
+}
+.google {
+    font-family: 'Montserrat', sans-serif;
+}
