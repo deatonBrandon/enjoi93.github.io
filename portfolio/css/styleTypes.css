@@ -1,0 +1,92 @@
+.outerwrapper {
+  width: 70%;
+  background-image: url(../images/background.png);
+  margin-left: 40px;
+  margin-right: auto;
+  list-style-position: inside;
+  padding-top: 20px;
+}
+.outerwrapper form {
+  padding: 12px;
+  flex: 1 1 auto;
+}
+.outerwrapper article h2 {
+  padding-bottom: 10px;
+}
+.contact a:link {color: goldenrod; font-weight: bold;}
+.contact a:visited {color: #333;}
+.contact a:focus, .contact a:hover, .contact a:active {color: #f3f3f3;}
+
+.standout {
+  text-align: right;
+  padding-right: 50px;
+  background-color: #333;
+  color: #f3f3f3;
+  height: 80px;
+  position: absolute;
+  width: 100%;
+  bottom: 0; 
+}
+.standout img {
+  margin-right: 1px;
+}
+.standout div p {
+  padding: 5px;  
+}
+
+.contact div {
+  margin: 10px;
+}
+.contact label {
+  margin-right: 15px;
+  width: 175px;
+  display: inline-table;
+}
+.contact form {
+  margin-bottom: 40px;
+}
+
+.move-down {
+  padding-top: 20px;
+}
+.example-space {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.examplebox {
+  background: #f3f3f3;
+  border: 1px solid #000000;
+  float: left;
+  margin: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 31%;
+}
+
+.examplebox h4.exampletitle {
+  background:#333; 
+  color: #f3f3f3;
+  padding: 15px;
+}
+
+.examplebox h5 {
+  color: #333;
+  padding: 5px;
+}
+.examplebox img {
+  margin-bottom: 20px;
+}
+
+.examplebox a.button {
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  color: #333;
+  background: limegreen;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 1px;
+}

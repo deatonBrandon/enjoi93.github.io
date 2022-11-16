@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  background-image: url(../images/background.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+
+/*.brandon-title {
+    width: 650px;
+    background-color: #E7DBF6;
+    margin-right: auto;
+  }*/
+
+nav {
+  background-color: #333;
+  height: 50px;
+}
+nav h1 {
+  float: left;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30pt;
+}
+nav ul {
+margin: 0 auto;
+  height: 50px;
+  width: 600px;
+}
+
+nav ul li {
+  list-style-type: none;
+  width: 150px;
+  float: left;
+text-align: center;
+}
+li a {
+text-decoration: none;
+line-height: 50px;
+display: block;
+}
+
+li a:link {color: #f3f3f3; font-weight: bold;}
+li a:visited {color: #f3f3f3;}
+li a:focus, li a:hover, li a:active {background-color: silver; color: black}
+
+article { 
+  color: #f3f3f3;
+  line-height: 30px;
+  font-size: 14pt;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+  width: 600px;
+  color: #f3f3f3;
+  background-image: url(../images/background.png);
+}
+/*.standout {
+  color: black;
+  font-family: serif;
+  background-color: white; 
+  border-style: outset;
+  border-width: 6px;
+  border-color: darkgray; 
+}
+ a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! 
+a:active MUST come after a:hover in the CSS definition in order to be effective! 
+Pseudo-class names are not case-sensitive. */
