@@ -1,0 +1,75 @@
+
+/* Brandon Deaton Ian Sullivan
+	November 17, 2022 */
+
+	@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+	@font-face {
+    font-family: 'alex';
+    src: url('../fonts/alexbrush-regular-webfont.woff') format('woff'),
+         url('../fonts/alexbrush-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	background-image: url(../images/jewelry.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*body {
+	background-image: url(../images/jewelry.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/
+
+main {
+	background: linear-gradient(#FFFFFF, #F0F9E6);
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+	 
+#outerwrapper {
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 15%;
+	background: rgba(243,205,170, 0.4);
+}
+
+#outerwrapper img {
+	border-radius: 100%;
+	float: left;
+}
+
+#outerwrapper nav ul {
+	list-style-type: none;
+	font-size: 1.5em;
+	float: none;
+}
+
+#outerwrapper h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 4em;
+}
+
+#outerwrapper h2 {
+	font-family: 'alex', "Times New Roman", serif;
+	font-style: italic;
+	font-size: 2em;
+}
+
+footer {
+	font-size: 1em;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.addrightmargin {
+	margin-right: 10%;
+}
+
