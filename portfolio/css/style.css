@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Play&display=swap');
+
+html {
+  background-image: url(../images/bodybackground.png);
+  background-color: #333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+nav {
+  background-color: #333;
+  height: 50px;
+}
+
+nav ul {
+  margin: 0 auto;
+  margin-right: 50px;
+  height: 50px;
+  width: 600px;
+}
+
+nav ul li {
+  list-style-type: none;
+  width: 150px;
+  float: left;
+text-align: center;
+}
+li a {
+font-family: 'Montserrat', sans-serif;
+text-decoration: none;
+line-height: 50px;
+display: block;
+}
+
+li a:link {color: #f3f3f3; font-weight: bold;}
+li a:visited {color: #f3f3f3;}
+li a:focus, li a:hover, li a:active {background-color: silver; color: black}
+
+article { 
+  padding: 10px;
+  font-family: 'Play', sans-serif;
+  color: #333;
+  font-size: 16pt;
+}
+
+article ul li {
+  list-style-type: '»';
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+  width: 600px;
+  border: 2px solid #333;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 12pt;
+}
+/*.standout {
+  color: black;
+  font-family: serif;
+  background-color: white; 
+  border-style: outset;
+  border-width: 6px;
+  border-color: darkgray; 
+}
+ a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! 
+a:active MUST come after a:hover in the CSS definition in order to be effective! 
+Pseudo-class names are not case-sensitive. */
