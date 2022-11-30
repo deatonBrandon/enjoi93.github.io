@@ -1,7 +1,0 @@
-input {
-    padding: 5px;
-    transition: all 0.2s ease-out;
-}
-input:focus {
-    padding: 10px;
-}
