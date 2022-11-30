@@ -10,11 +10,11 @@
   border-radius: 15%;
   text-align: center;
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
   list-style-position: inside;
   padding-top: 20px;
-
 }
-
 
 .brandon-title a { /* --> top left header "About Brandon Deaton" */
   font-family: 'kaushan', "Times New Roman", 'serif';
@@ -28,8 +28,8 @@
 }
 
 .img-fit img {
-  width: 100%;
-  height: 640px;
+width: 100%;
+height: 850px;
 }
 
 .contact a:link {color: rgb(98, 98, 98); font-weight: bold;}
@@ -49,49 +49,8 @@
 
 .move-down {    /* -> Experience.html -> h2 'Projects' */
   padding-top: 20px;
-  padding-bottom: 10px;
 }
 
-.example-space {
-  display: flex;
-  justify-content: center;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.examplebox {
-  background: #f3f3f3;
-  border: 3px solid #000000;
-  margin: 10px;
-  margin-bottom: 55px;
-  text-align: center;
-  width: 31%;
-}
-
-.examplebox h4.exampletitle {
-  background:#333; 
-  color: #f3f3f3;
-  padding: 15px;
-}
-
-.examplebox h5 {
-  color: #333;
-  padding: 5px;
-}
-.examplebox img {margin-bottom: 20px;}
-
-.examplebox a.button {
-  display: block;
-  width: 70%;
-  margin: 10px auto;
-  color: #333;
-  background: lime;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 15px;
-  padding: 1px;
-}
 .standout {
   background-color: silver;
   height: 70px;
