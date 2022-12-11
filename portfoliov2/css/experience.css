@@ -1,0 +1,44 @@
+.wrap-project {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+
+.section_one {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  font-family: 'Mate SC', sans-serif, serif;
+  list-style-position: inside;
+}
+
+.section_one h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section_two {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+  
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.box h5 {
+    font-family: 'Mate SC', sans-serif, serif;
+    color: black;
+    font-size: 1.5rem;
+    margin: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.section_one ul li {
+  list-style-image: url(../images/cubeBullet.png);
+}

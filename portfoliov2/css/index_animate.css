@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; 
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, rgba(0,0,0, 0.9), rgba(0,0,0, 0.4)), url(../images/denver.jpg) center no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  overflow: hidden;
+}
+
+.container {
+  width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  transform: translateX(100rem);
+  animation: slideIn 1s forwards;
+}
+
+nav ul li:nth-child(1){
+  animation-delay: 0s;
+}
+
+nav ul li:nth-child(2){
+  animation-delay: .5s;
+}
+
+nav ul li:nth-child(3){
+  animation-delay: 1s;
+}
+
+nav ul li:nth-child(4){
+  animation-delay: 1.5s;
+}
+
+nav ul li a {
+  padding: 2px 0;
+  margin: 0 4rem;
+  position: relative;
+}
+
+nav ul li a:last-child {
+  margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #99ff99;
+  left: 0;
+  transform: scaleX(0);
+  transition: all .7s;
+}
+
+nav ul li a::before{
+  bottom: 0;
+  transform-origin: center;
+}
+
+nav ul li a::after{
+  bottom: 0;
+  transform-origin: center;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+  transform: scaleX(1);
+}
+
+@keyframes slideIn {
+  from{
+
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+.brand {
+  text-transform: uppercase;
+  font-family: 'Mate SC', sans-serif, serif;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  font-weight: 600;
+  transform: translateX(-100rem);
+  animation: slideIn 1s forwards;
+}
+
+.brand span, .welcome span {
+  color: #99ff99;
+}
+
+/* END HEADER CSS -- 
+MAIN CSS FOR INDEX*/
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 20rem;
+  width: 30%;
+  margin: 5rem auto;
+  border: 2px solid black;
+  background-color: rgba(121, 121, 121, 0.8);
+  box-shadow: 16px 14px 20px #333;
+  border-radius: 10px;
+  animation: floatY 6s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0px);
+    border: 2px solid black;
+  }
+  50% {
+    transform: translateY(8rem);
+    border: 2px solid #99ff99;
+    border-radius: 0%;
+  }
+  100% {
+    transform: translateY(0px);
+    border: 2px solid black;
+  }
+  
+}
+
+.welcome div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  letter-spacing: 1px;
+}
+
+.welcome p {
+  flex: 1;
+  font-family: 'Mate SC', sans-serif, serif;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .welcome {
+    display: flex;
+    width: 30rem;
+  }
+  .welcome div p {
+    line-height: 2rem;
+    font-size: small;
+  }
+}
