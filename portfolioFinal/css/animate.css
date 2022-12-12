@@ -236,6 +236,11 @@ nav ul li a:hover::after{
 }
 
 @media (min-width: 350px) and (max-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+  }
   .about {
     display: inline-block;
     height: 50%;
@@ -250,10 +255,6 @@ nav ul li a:hover::after{
   }
   .box img {
     display: none;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
   }
   .project-container {
     display: block;
