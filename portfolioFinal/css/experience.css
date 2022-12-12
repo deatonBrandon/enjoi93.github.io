@@ -1,0 +1,63 @@
+.wrap-project {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+
+.section_one {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  font-family: 'Mate SC', sans-serif, serif;
+  list-style-position: inside;
+}
+
+.section_one h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section_two {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+  
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.box h5 {
+    font-family: 'Mate SC', sans-serif, serif;
+    color: black;
+    font-size: 1.5rem;
+    margin: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.section_one ul li {
+  list-style-image: url(../images/cubeBullet.png);
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+  .section_one {
+    font-size: 10pt;
+  }
+  .section_two {
+    display: block;
+    font-size: 10pt;
+    margin: 0;
+  }
+  .section_two .box {
+    display: flex;
+    align-items: center;
+  }
+  .section_two .box h5 {
+    margin: 5px;
+    width: 50%;
+  }
+}

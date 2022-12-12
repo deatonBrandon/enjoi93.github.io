@@ -1,0 +1,40 @@
+
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #111;
+}
+
+footer .content {
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .content {
+    margin: 1rem;
+}
+
+footer .content .media-icons a {
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    transition: all 0.3s ease;
+}
+
+.content .media-icons a:hover {
+    border-color: #99ff99;
+}
+
+footer .content .media-icons img {
+    display: flex;
+    justify-content: center;
+    margin: 2px auto;
+    padding-top: 3px;
+}

@@ -1,0 +1,72 @@
+.title-center { /* -- belongs to "Contact Me" title -- */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem auto;
+  }
+  
+  .contact p {
+    font-family: 'Mate SC', sans-serif, serif;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+  
+  .contact label {
+      width: 225px;
+      display: inline-table;
+      font-size: 2rem;
+    }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem auto;
+    font-size: 2rem;
+    }
+
+input {
+    padding: 3px;
+}
+  
+  textarea {
+    resize: none;
+    height: 120px;
+    width: 600px;
+    border: 2px solid #333;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 12pt;
+  }
+  
+  .contact a:link {color: black;}
+  .contact a:visited {color: cyan;}
+  .contact a:focus, .contact a:hover, .contact a:active {color: #99ff99;}
+  .contact div {margin: 10px;}
+
+@media (min-width: 350px) and (max-width: 600px) {
+
+  .title-center {
+    font-size: 18pt;
+  }
+  .contact p {
+    font-size: 10pt;
+    line-height: 12px;
+  }
+  .contact form {
+    display: block;
+    margin: 0;
+  }
+  .contact form label, legend {
+    font-size: 10pt;
+  }
+  textarea {
+    resize: none;
+    max-height: 100px;
+    max-width: 350px;
+  }
+}
