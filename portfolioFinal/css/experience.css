@@ -43,7 +43,7 @@
   list-style-image: url(../images/cubeBullet.png);
 }
 
-@media (min-width: 350px) and (max-width: 600px) {
+@media (min-width: 350px) and (max-width: 900px) {
   .section_one {
     font-size: 10pt;
   }

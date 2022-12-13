@@ -183,7 +183,7 @@ MAIN CSS FOR INDEX*/
   font-size: 2rem;
 }
 
-@media (min-width: 350px) and (max-width: 600px) {
+@media (min-width: 350px) and (max-width: 900px) {
   nav ul {
     margin-left: 4rem;
     display: flex;
