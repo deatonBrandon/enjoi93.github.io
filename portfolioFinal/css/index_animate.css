@@ -185,9 +185,16 @@ MAIN CSS FOR INDEX*/
 
 @media (min-width: 350px) and (max-width: 600px) {
   nav ul {
+    margin-left: 4rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: right;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  nav ul li a {
+    padding: 0;
   }
   .welcome {
     display: flex;
