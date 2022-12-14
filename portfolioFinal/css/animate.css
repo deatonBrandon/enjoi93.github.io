@@ -22,10 +22,6 @@ a {
   color: black;
 }
 
-header {
-  overflow: hidden;
-}
-
 .container {
   width: 120rem;
   width: 90%;
@@ -49,7 +45,7 @@ nav ul li {
 
 nav ul li {
   list-style: none;
-  transform: translateX(100rem);
+  transform: translateX(1rem);
   animation: slideIn 1s forwards;
 }
 
@@ -101,7 +97,7 @@ nav ul li a:hover::after{
 
 @keyframes slideIn {
   from{
-
+    opacity: 0;
   }
   to{
     transform: translateX(0);
@@ -114,6 +110,8 @@ nav ul li a:hover::after{
   letter-spacing: 2px;
   font-size: 3rem;
   font-weight: 600;
+  transform: translateX(-1rem);
+  animation: slideIn 1s forwards;
 }
 
 .brand span {
@@ -132,7 +130,7 @@ nav ul li a:hover::after{
   border: 2px solid black;
   box-shadow: 16px 14px 20px #333;
   border-radius: 10px;
-  transform: translateY(-100rem);
+  transform: translateY(-1rem);
   animation: slideIn 1s forwards;
 }
 
@@ -149,7 +147,7 @@ nav ul li a:hover::after{
   border: 2px solid black;
   box-shadow: 16px 14px 20px #333;
   border-radius: 10px;
-  transform: translateY(-100rem);
+  transform: translateY(-1rem);
   animation: slideIn 1s forwards;
 }
 
@@ -176,7 +174,7 @@ nav ul li a:hover::after{
 .project-container {
   display: flex;
   justify-content: center;
-  height: 70rem;
+  height: 60rem;
   width: 20rem;
   width: 60%;
   margin: 5rem auto;
@@ -184,7 +182,7 @@ nav ul li a:hover::after{
   border: 2px solid black;
   box-shadow: 16px 14px 20px #333;
   border-radius: 10px;
-  transform: translateY(-100rem);
+  transform: translateY(1rem);
   animation: slideIn 1s forwards;
 }
 
@@ -235,7 +233,12 @@ nav ul li a:hover::after{
   background-color: white;
 }
 
-@media (min-width: 350px) and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
+  /* Main */
+  body {
+    background-color: black;
+  }
+  /* navigation animation (exclude index html) */
   nav ul {
     margin-left: 4rem;
     display: flex;
@@ -248,10 +251,8 @@ nav ul li a:hover::after{
   nav ul li a {
     padding: 0;
   }
+  /* About.html animation */
   .about {
-    display: inline-block;
-    height: 50vh;
-    margin-top: 5rem auto;
     width: 100%;
   }
   .about .title {
@@ -260,25 +261,69 @@ nav ul li a:hover::after{
   .about div p {
     font-size: 10pt;
   }
+  /* Experience.html animation/images removal */
   .box img {
     display: none;
   }
   .project-container {
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    max-height: 60rem;
+  }
+
+  .wrap-project .section_two {
+    display: flex;
+    flex-direction: column;
   }
   .button {
-    width: auto;
+    width: 7rem;
     margin: 0;
   }
+  /* Contact.html animation */
   .outerwrapper {
     display: block;
     margin: 1rem auto;
     width: 100%;
-    max-height: 60rem;
+    max-height: 100vh;
   }
   .shape {
     margin: 5px;
   }
+  .title-center {
+    font-size: 18pt;
+  }
+  .contact p {
+    font-size: 10pt;
+    line-height: 12px;
+  }
+  .contact form {
+    display: block;
+    margin: 0;
+  }
+  .contact form label, legend {
+    font-size: 10pt;
+  }
+  textarea {
+    resize: none;
+    max-height: 100px;
+    max-width: 350px;
+  }
+ /* Experience hmtl */
+  .section_one {
+    font-size: 10pt;
+  }
+  .section_two {
+    display: block;
+    font-size: 10pt;
+    margin: 0;
+  }
+  .section_two .box {
+    display: flex;
+    align-items: center;
+  }
+  .section_two .box h5 {
+    display: flex;
+    padding: 0 1rem 0;
+  }
 }
+

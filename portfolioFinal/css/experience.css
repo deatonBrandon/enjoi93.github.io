@@ -11,6 +11,7 @@
   align-items: center;
   font-family: 'Mate SC', sans-serif, serif;
   list-style-position: inside;
+  padding-left: 5px;
 }
 
 .section_one h2 {
@@ -22,6 +23,7 @@
   justify-content: space-evenly;
   flex-direction: row;
   margin-top: 2rem;
+  padding-left: 5px;
 }
   
 .box {
@@ -41,23 +43,4 @@
 
 .section_one ul li {
   list-style-image: url(../images/cubeBullet.png);
-}
-
-@media (min-width: 350px) and (max-width: 900px) {
-  .section_one {
-    font-size: 10pt;
-  }
-  .section_two {
-    display: block;
-    font-size: 10pt;
-    margin: 0;
-  }
-  .section_two .box {
-    display: flex;
-    align-items: center;
-  }
-  .section_two .box h5 {
-    margin: 5px;
-    width: 50%;
-  }
 }
