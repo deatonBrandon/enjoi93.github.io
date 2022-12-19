@@ -12,7 +12,7 @@ html {
 
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(to top, rgba(0,0,0, 0.9), rgba(0,0,0, 0.3)), url(../images/denver.jpg) center no-repeat;
   background-size: cover;
 }
@@ -125,30 +125,54 @@ nav ul li a:hover::after{
   height: 30rem;
   width: 20rem;
   width: 60%;
-  margin: 5rem auto;
+  margin: 2rem auto;
   background-color: rgba(121, 121, 121, 0.8);
   border: 2px solid black;
   box-shadow: 16px 14px 20px #333;
   border-radius: 10px;
   transform: translateY(-1rem);
-  animation: slideIn 1s forwards;
+  animation: slideIn 1s forwards, blink 6s infinite 1s;
 }
 
+@keyframes blink {
+  0% {
+    border: 2px solid black;
+  }
+  50% {
+    border: 2px solid #99ff99;
+  }
+  100% {
+    border: 2px solid black;
+  }
+  
+}
 /* -- End "about.html"
   Start "contact.html" animate */
 .outerwrapper {
   display: flex;
   justify-content: center;
-  height: 70rem;
   width: 20rem;
   width: 60%;
-  margin: 5rem auto;
+  margin: 2rem auto;
   background-color: rgba(121, 121, 121, 0.8);
   border: 2px solid black;
   box-shadow: 16px 14px 20px #333;
   border-radius: 10px;
   transform: translateY(-1rem);
-  animation: slideIn 1s forwards;
+  animation: slideIn 1s forwards, blink 6s infinite 1s;
+}
+
+@keyframes blink {
+  0% {
+    border: 2px solid black;
+  }
+  50% {
+    border: 2px solid #99ff99;
+  }
+  100% {
+    border: 2px solid black;
+  }
+  
 }
 
 .shape {
@@ -174,16 +198,28 @@ nav ul li a:hover::after{
 .project-container {
   display: flex;
   justify-content: center;
-  height: 60rem;
   width: 20rem;
   width: 60%;
-  margin: 5rem auto;
+  margin: 2rem auto;
   background-color: rgba(121, 121, 121, 0.8);
   border: 2px solid black;
   box-shadow: 16px 14px 20px #333;
   border-radius: 10px;
   transform: translateY(1rem);
-  animation: slideIn 1s forwards;
+  animation: slideIn 1s forwards, blink 6s infinite 1s;
+}
+
+@keyframes blink {
+  0% {
+    border: 2px solid black;
+  }
+  50% {
+    border: 2px solid #99ff99;
+  }
+  100% {
+    border: 2px solid black;
+  }
+  
 }
 
 .box img {
@@ -202,11 +238,11 @@ nav ul li a:hover::after{
     transform: rotate(0deg)
   }
 
-  40%, 80% {
+  10%, 90% {
     transform: rotate(-10deg);
   }
 
-  20%, 60% {
+  70% {
     transform: rotate(10deg);
   }
 }
@@ -233,17 +269,48 @@ nav ul li a:hover::after{
   background-color: white;
 }
 
-@media only screen and (max-width: 768px) {
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 6rem;
+  background: gray;
+}
+
+footer .content {
+  display: flex;
+  margin: 7px;
+  justify-content: space-between;
+}
+
+footer .content .media-icons a {
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  transition: all 0.3s ease;
+}
+
+.content .media-icons a:hover {
+  border-color: #99ff99;
+}
+
+footer .content .media-icons img {
+  display: flex;
+  justify-content: center;
+  margin: 2px auto;
+  padding-top: 3px;
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
   /* Main */
-  body {
-    background-color: black;
-  }
   /* navigation animation (exclude index html) */
   nav ul {
-    margin-left: 4rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: right;
+    margin-left: 8rem;
   }
   nav ul li {
     margin: 0;
@@ -261,19 +328,28 @@ nav ul li a:hover::after{
   .about div p {
     font-size: 10pt;
   }
-  /* Experience.html animation/images removal */
-  .box img {
-    display: none;
-  }
+  /* Experience.html animation // images removal */
   .project-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    width: 95%;
   }
-
+  .section_one {
+    font-size: 10pt;
+    padding: 2px;
+  }
   .wrap-project .section_two {
     display: flex;
     flex-direction: column;
+  }
+  .section_two .box {
+    display: flex;
+    align-items: center;
+  }
+  .section_two .box h5 {
+    display: flex;
+    padding: 0 1rem 0;
+  }
+  .box img {
+    display: none;
   }
   .button {
     width: 7rem;
@@ -283,11 +359,11 @@ nav ul li a:hover::after{
   .outerwrapper {
     display: block;
     margin: 1rem auto;
-    width: 100%;
-    max-height: 100vh;
+    width: 95%;
+    overflow: auto;
   }
   .shape {
-    margin: 5px;
+    margin: 1rem auto;
   }
   .title-center {
     font-size: 18pt;
@@ -308,22 +384,15 @@ nav ul li a:hover::after{
     max-height: 100px;
     max-width: 350px;
   }
- /* Experience hmtl */
-  .section_one {
-    font-size: 10pt;
+  
+  footer {
+    position: relative;
+    margin-top: 90%;
   }
-  .section_two {
-    display: block;
-    font-size: 10pt;
-    margin: 0;
-  }
-  .section_two .box {
+  footer .content {
     display: flex;
-    align-items: center;
-  }
-  .section_two .box h5 {
-    display: flex;
-    padding: 0 1rem 0;
+    justify-content: center;
+    padding: 5px;
   }
 }
 

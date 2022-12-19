@@ -1,6 +1,6 @@
 .wrap-project {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   font-size: 2rem;
   margin: 2rem auto;
 }
