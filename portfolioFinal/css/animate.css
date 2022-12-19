@@ -328,6 +328,7 @@ footer .content .media-icons img {
   }
   .about div p {
     font-size: 10pt;
+    padding: 0 2px;
   }
   /* Experience.html animation // images removal */
   .project-container {
@@ -364,6 +365,7 @@ footer .content .media-icons img {
     overflow: auto;
   }
   .shape {
+    color: black;
     margin: 1rem auto;
   }
   .contact .title-center {
@@ -372,6 +374,7 @@ footer .content .media-icons img {
   .outerwrapper .contact p {
     font-size: 10pt;
     line-height: normal;
+    padding: 0 2px;
   }
   .contact form {
     display: block;
