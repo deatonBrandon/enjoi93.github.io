@@ -303,7 +303,7 @@ footer .content .media-icons img {
   padding-top: 3px;
 }
 
-@media (min-width: 350px) and (max-width: 768px) {
+@media (min-width: 350px) and (max-width: 775px) {
   /* Main */
   /* navigation animation (exclude index html) */
   nav ul {
@@ -365,12 +365,12 @@ footer .content .media-icons img {
   .shape {
     margin: 1rem auto;
   }
-  .title-center {
+  .contact .title-center {
     font-size: 18pt;
   }
-  .contact p {
+  .outerwrapper .contact p {
     font-size: 10pt;
-    line-height: 12px;
+    line-height: normal;
   }
   .contact form {
     display: block;
@@ -396,3 +396,14 @@ footer .content .media-icons img {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1070px) {
+  .project-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1045px) {
+  .outerwrapper {
+    width: 80%;
+  }
+}

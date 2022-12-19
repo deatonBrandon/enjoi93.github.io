@@ -250,3 +250,10 @@ footer .content .media-icons img {
     padding: 5px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1105px) {
+  .welcome div p {
+    line-height: 2rem;
+    font-size: small;
+  }
+}

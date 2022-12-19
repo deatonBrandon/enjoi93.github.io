@@ -30,6 +30,15 @@
     font-size: 2rem;
     }
 
+  .contact form fieldset {
+    border-radius: 10px;
+    border-color: black;
+  }
+
+  .contact form fieldset legend {
+    font-weight: bold;
+  }
+
 input {
     padding: 3px;
 }
