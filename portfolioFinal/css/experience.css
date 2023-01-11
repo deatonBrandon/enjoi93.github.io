@@ -14,6 +14,10 @@
   padding-left: 5px;
 }
 
+.section_one ul li {
+  list-style-image: url(../images/cubeBullet.png);
+}
+
 .section_one h2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -21,26 +25,25 @@
 .section_two {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-direction: row;
-  margin-top: 2rem;
-  padding-left: 5px;
+  margin: 1rem 2rem;
+
 }
   
 .box {
   display: flex;
   flex-direction: column;
+  margin: 0 2rem;
 }
 
 .box h5 {
     font-family: 'Mate SC', sans-serif, serif;
     color: black;
     font-size: 1.5rem;
-    margin: 5px;
+    padding: 0 3px;
     text-align: center;
     border: 2px solid black;
     border-radius: 10px;
 }
 
-.section_one ul li {
-  list-style-image: url(../images/cubeBullet.png);
-}
