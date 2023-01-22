@@ -18,6 +18,8 @@ body {
   background-size: cover;
 }
 
+/* .brand refers to "Enjoy" */
+
 .brand a {
   text-decoration: none;
   color: black;
@@ -39,6 +41,8 @@ nav {
 nav ul {
   display: flex;
 }
+
+/* 'nav ul li' animation allows each icon to float in one after the other */
 
 nav ul li {
   list-style: none;
@@ -65,6 +69,8 @@ nav ul li:nth-child(4){
   animation-delay: 1.5s;
 }
 
+/* End of animation */
+
 nav ul li a {
   padding: 2px 0;
   margin: 0 4rem;
@@ -74,6 +80,8 @@ nav ul li a {
 nav ul li a:last-child {
   margin-right: 0;
 }
+
+/* This animation refers to the underline of each icon */
 
 nav ul li a::before,
 nav ul li a::after{
@@ -111,6 +119,8 @@ nav ul li a:hover::after{
     transform: translateX(0);
   }
 }
+
+/* End underline animation */
 
 .brand {
   text-transform: uppercase;
@@ -215,6 +225,8 @@ footer .content .media-icons img {
   justify-content: center;
   margin: 2px auto;
 }
+
+/* Because of my decision to remove certain animations from the following pages, I separated the index.html and RWD will follow suit */
 
 @media only screen and (max-width: 815px) {
   nav ul {

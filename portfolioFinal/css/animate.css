@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 
+/* -_- The copy/paste/removal of animations from index_animate.css -_- */
+
 * {
   margin: 0;
   padding: 0;
@@ -118,6 +120,8 @@ nav ul li a:hover::after{
 .brand span {
   color: #99ff99;
 }
+
+/*End of animations */
 
 /* -- Begin "about.html" animate */
 .about {
@@ -253,6 +257,9 @@ nav ul li a:hover::after{
   background-color: white;
 }
 
+/* -- End of "experience.html"
+  Begin global CSS for footer -- */
+
 footer {
   position: fixed;
   width: 100%;
@@ -291,8 +298,8 @@ footer .content .media-icons img {
 Begin RWD that was coded after 10 weeks of learning (this'll be a good laugh looking at this trash in 5 years) */
 
 @media (min-width: 350px) and (max-width: 815px) {
-  /* Main */
-  /* navigation animation (exclude index html) */
+  /* Global @media */
+  /* navigation animation (DOES NOT INCLUDE "index.html"/"index_animate.css") */
   nav ul {
     display: flex;
     flex-flow: row wrap;
@@ -305,7 +312,21 @@ Begin RWD that was coded after 10 weeks of learning (this'll be a good laugh loo
   nav ul li a {
     padding: 0;
   }
-  /* About.html animation */
+
+  footer {
+    position: fixed;
+  }
+  footer .content {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  footer .media-icons {
+    margin: 7px auto;
+  }
+
+  /* End Global @media */
+  /* --- "About.html" animation */
   .about {
     width: 95%;
   }
@@ -316,7 +337,7 @@ Begin RWD that was coded after 10 weeks of learning (this'll be a good laugh loo
     font-size: 10pt;
     padding: 0 2px;
   }
-  /* Experience.html animation // images removal */
+  /* --- "Experience.html" animation // images removal */
   .project-container {
     width: 95%;
   }
@@ -344,7 +365,7 @@ Begin RWD that was coded after 10 weeks of learning (this'll be a good laugh loo
   .button {
     margin: 5px;
   }
-  /* Contact.html animation */
+  /* --- "Contact.html" animation */
   .outerwrapper {
     display: block;
     margin: 1rem auto;
@@ -375,19 +396,11 @@ Begin RWD that was coded after 10 weeks of learning (this'll be a good laugh loo
     max-height: 100px;
     max-width: 350px;
   }
-  
-  footer {
-    position: fixed;
-  }
-  footer .content {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  footer .media-icons {
-    margin: 7px auto;
-  }
 }
+
+/* --**-- These Media Queries allow a smooth transition from desktop --> tablet --> mobile --**-- */
+
+/* -- This @media impacts "Experience.html" only */
 
 @media (min-width: 815px) and (max-width: 1093px) {
   .project-container {
@@ -408,6 +421,8 @@ Begin RWD that was coded after 10 weeks of learning (this'll be a good laugh loo
     padding: 3px 5px;
   }
 }
+
+/* -- This @media impacts "Contact.html only */
 
 @media (min-width: 792px) and (max-width: 1045px) {
   .outerwrapper {
