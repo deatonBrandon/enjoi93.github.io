@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  
+}
+
+.home-nav li {
+  list-style-type: none;
+}

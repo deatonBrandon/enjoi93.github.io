@@ -18,8 +18,6 @@ body {
   background-size: cover;
 }
 
-/* .brand refers to "Enjoy" */
-
 .brand a {
   text-decoration: none;
   color: black;
@@ -41,8 +39,6 @@ nav {
 nav ul {
   display: flex;
 }
-
-/* 'nav ul li' animation allows each icon to float in one after the other */
 
 nav ul li {
   list-style: none;
@@ -69,8 +65,6 @@ nav ul li:nth-child(4){
   animation-delay: 1.5s;
 }
 
-/* End of animation */
-
 nav ul li a {
   padding: 2px 0;
   margin: 0 4rem;
@@ -80,8 +74,6 @@ nav ul li a {
 nav ul li a:last-child {
   margin-right: 0;
 }
-
-/* This animation refers to the underline of each icon */
 
 nav ul li a::before,
 nav ul li a::after{
@@ -120,8 +112,6 @@ nav ul li a:hover::after{
   }
 }
 
-/* End underline animation */
-
 .brand {
   text-transform: uppercase;
   font-family: 'Mate SC', sans-serif, serif;
@@ -148,7 +138,7 @@ MAIN CSS FOR INDEX*/
   width: 30%;
   margin: 5rem auto;
   border: 2px solid black;
-  background-color: rgba(153, 255, 153, 0.4);
+  background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 16px 14px 20px #333;
   border-radius: 10px;
   animation: floatY 6s infinite;
@@ -158,10 +148,12 @@ MAIN CSS FOR INDEX*/
 @keyframes floatY {
   0% {
     transform: translateY(0px);
+    border: 2px solid black;
   }
   50% {
     transform: translateY(8rem);
     border: 2px solid #99ff99;
+    border-radius: 0%;
   }
   100% {
     transform: translateY(0px);
@@ -197,38 +189,36 @@ footer {
   width: 100%;
   bottom: 0;
   height: 6rem;
-  background: rgba(0, 0, 0, 1);
+  background: gray;
 }
 
 footer .content {
   display: flex;
   justify-content: space-between;
-  margin: 9px auto auto 5px;
+  margin: 7px;
 }
 
 footer .content .media-icons a {
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: 45px;
   display: inline-block;
   border-radius: 5px;
-  border: 2px solid black;
-  background-color: #99ff99;
+  border: 2px solid #222222;
   transition: all 0.3s ease;
 }
 
 .content .media-icons a:hover {
-  border: 2px solid #99ff99;
+  border-color: #99ff99;
 }
 
 footer .content .media-icons img {
   display: flex;
   justify-content: center;
   margin: 2px auto;
+  padding-top: 3px;
 }
 
-/* Because of my decision to remove certain animations from the following pages, I separated the index.html and RWD will follow suit */
-
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 768px) {
   nav ul {
     margin-left: 8rem;
     display: flex;
@@ -251,19 +241,17 @@ footer .content .media-icons img {
   }
 
   footer {
-    position: fixed;
+    position: relative;
+    margin-top: 95%;
   }
   footer .content {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-  }
-  footer .media-icons {
-    margin: 7px auto;
+    padding: 5px;
   }
 }
 
-@media (min-width: 815px) and (max-width: 1105px) {
+@media (min-width: 768px) and (max-width: 1105px) {
   .welcome div p {
     line-height: 2rem;
     font-size: small;

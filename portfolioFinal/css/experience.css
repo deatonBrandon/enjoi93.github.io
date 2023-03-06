@@ -9,9 +9,6 @@
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  background-color: rgba(153, 255, 153, 0.8);
-  border-radius: 10px;
-  border: 1px solid black;
   font-family: 'Mate SC', sans-serif, serif;
   list-style-position: inside;
   padding-left: 5px;
@@ -43,11 +40,18 @@
 .box h5 {
     font-family: 'Mate SC', sans-serif, serif;
     color: black;
-    background-color: #99ff99;
     font-size: 1.5rem;
     padding: 0 3px;
     text-align: center;
     border: 2px solid black;
     border-radius: 10px;
+}
+
+.let-it-scroll {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 6rem;
+  margin-top: 6rem;
 }
 
