@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#header-contain {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 0;
+  list-style: none;
+}
+.menu-btn {
+  position: fixed;
+  display: flex;
+  width: 90%;
+  justify-content: end;
+  z-index: 1;
+}
+#me-logo {
+  width: min(100%, 150px);
+  margin-inline: auto;
+}
+#me-logo img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#testTyper {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 2rem;
+}
+
+.carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 471px;
+  height: 182px;
+  -webkit-perspective: 800px;
+  perspective: 800px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.caption-carousel {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 20rem;
+  height: 10px;
+  perspective: 2000;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+}
+
+.carousel-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-182px) rotateY(0);
+  transform: translateZ(-182px) rotateY(0);
+  -webkit-animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+  animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+}
+.caption-content {
+  position: absolute;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+  animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+}
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid black;
+}
+.carousel-item:nth-child(1) {
+  -webkit-transform: rotateY(0) translateZ(182px);
+  transform: rotateY(0) translateZ(182px);
+}
+.carousel-item:nth-child(2) {
+  -webkit-transform: rotateY(120deg) translateZ(182px);
+  transform: rotateY(120deg) translateZ(182px);
+}
+.carousel-item:nth-child(3) {
+  -webkit-transform: rotateY(240deg) translateZ(182px);
+  transform: rotateY(240deg) translateZ(182px);
+}
+.caption {
+  position: absolute;
+  font-size: 12pt;
+  font-weight: bold;
+  width: 20rem;
+}
+.caption:nth-child(1) {
+  -webkit-transform: rotateY(0) translateZ(182px);
+  transform: rotateY(0) translateZ(182px);
+}
+.caption:nth-child(2) {
+  -webkit-transform: rotateY(120deg) translateZ(182px);
+  transform: rotateY(120deg) translateZ(182px);
+}
+.caption:nth-child(3) {
+  -webkit-transform: rotateY(240deg) translateZ(182px);
+  transform: rotateY(240deg) translateZ(182px);
+}
+@-webkit-keyframes 
+carousel {  0%, 17.5% {
+ -webkit-transform: translateZ(-182px) rotateY(0);
+ transform: translateZ(-182px) rotateY(0);
+}
+ 27.5%, 45% {
+ -webkit-transform: translateZ(-182px) rotateY(-120deg);
+ transform: translateZ(-182px) rotateY(-120deg);
+}
+ 55%, 72.5% {
+ -webkit-transform: translateZ(-182px) rotateY(-240deg);
+ transform: translateZ(-182px) rotateY(-240deg);
+}
+ 82.5%, 100% {
+ -webkit-transform: translateZ(-182px) rotateY(-360deg);
+ transform: translateZ(-182px) rotateY(-360deg);
+}
+}
+ @keyframes 
+carousel {  0%, 17.5% {
+ -webkit-transform: translateZ(-182px) rotateY(0);
+ transform: translateZ(-182px) rotateY(0);
+}
+ 27.5%, 45% {
+ -webkit-transform: translateZ(-182px) rotateY(-120deg);
+ transform: translateZ(-182px) rotateY(-120deg);
+}
+ 55%, 72.5% {
+ -webkit-transform: translateZ(-182px) rotateY(-240deg);
+ transform: translateZ(-182px) rotateY(-240deg);
+}
+ 82.5%, 100% {
+ -webkit-transform: translateZ(-182px) rotateY(-360deg);
+ transform: translateZ(-182px) rotateY(-360deg);
+}
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
+
+#faq-contain{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  line-height: 1.5em;
+  padding: 15px;
+  text-align: center;
+  margin: 70rem auto 40rem;
+}
+#faq_head{
+  margin-bottom:5px;
+}
+.subheading{
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+dl{
+  margin: 30px auto 60px;
+  max-width: 300px;
+}
+
+dt{
+  background: #505662;
+  border-left: 8px solid #1F2024;
+  color: #B6BCCC;
+  font-weight: 600;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  transition: all .5s;
+}
+
+dt:after, dt:before{ 
+  content: "\f078";
+  font-family: fontAwesome;
+  position: absolute;
+  right: 15px;
+  height: 28px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  
+  transition: all .7s ease-in-out;
+}
+
+dt:before{
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+
+dt:hover{
+  cursor: pointer;
+}
+
+dt + dd{
+  max-height: 0;
+}
+
+dd{
+  background: #1C1C1C;
+  color: #edeff3;
+  margin: 0;
+  overflow: hidden;
+  padding: 1px 15px;
+  transition: all .5s;
+}
+
+dt.open{
+  background: #0E0C0D;
+  border-color: #0E0C0D;
+  color: #edeff3;
+  margin: -5px;
+}
+
+dt.open:after{
+  transform: rotate(180deg) translateY(-2px);
+}
+dt.open:before{
+  opacity: 1;
+  transform: rotate(-360deg) translateY(-3px);
+}
+
+dt.open + dd{
+  padding: 15px 15px 30px;
+  margin: 0 -5px;
+  max-height: 300px;
+}
+
+/* Footer CSS Begins
+  footer 'fixes' box to bottom of page;adds linear flare;extra padding for content */
+  footer {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.1));
+  }
+  #footer-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  }
+  #footer-contain p {
+    padding: 5px 0;
+    font-size: 10pt;
+    color: black;
+    text-align: center;
+  }
+
+  .foot_brand {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .foot_brand span {
+    color: #afded5;
+  }
