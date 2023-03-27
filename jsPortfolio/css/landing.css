@@ -249,3 +249,13 @@ dt.open + dd{
   .foot_brand span {
     color: #afded5;
   }
+
+  @media screen and (max-width: 768px) {
+    .carousel {
+      position: absolute;
+      top: 65%;
+    }
+    #faq-contain {
+      margin: 85rem auto 40rem;
+    }
+  }
