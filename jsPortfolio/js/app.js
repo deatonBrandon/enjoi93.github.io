@@ -1,6 +1,12 @@
 "use strict";
 
-document.addEventListener('DOMContentLoaded', (event) => {
+$( () => {
+
+
+
+
+
+
 
 // Begin typewriter animation
 var typeAnimation = document.getElementById('testTyper');
@@ -36,6 +42,7 @@ var typeAnimation = document.getElementById('testTyper');
   .pauseFor(2000) 
   .start();
 
+// this function toggles the projects menu
   $(function(){
     $("dt").click(function(){
       $(this).toggleClass("open");

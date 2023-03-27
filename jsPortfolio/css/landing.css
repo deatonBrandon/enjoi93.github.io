@@ -15,14 +15,13 @@ body {
 #header-contain {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2rem 0;
+  width: 100%;
+  padding: 2rem 0 0 2rem;
   list-style: none;
 }
 .menu-btn {
   position: fixed;
-  display: flex;
-  width: 90%;
-  justify-content: end;
+  right: 2rem;
   z-index: 1;
 }
 #me-logo {
@@ -54,17 +53,6 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.caption-carousel {
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  width: 20rem;
-  height: 10px;
-  perspective: 2000;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); 
-}
 
 .carousel-content {
   position: absolute;
@@ -77,14 +65,7 @@ body {
   -webkit-animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
   animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
 }
-.caption-content {
-  position: absolute;
-  width: 100%;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
-  animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
-}
+
 .carousel-item img {
   position: absolute;
   top: 0;
@@ -103,24 +84,8 @@ body {
   -webkit-transform: rotateY(240deg) translateZ(182px);
   transform: rotateY(240deg) translateZ(182px);
 }
-.caption {
-  position: absolute;
-  font-size: 12pt;
-  font-weight: bold;
-  width: 20rem;
-}
-.caption:nth-child(1) {
-  -webkit-transform: rotateY(0) translateZ(182px);
-  transform: rotateY(0) translateZ(182px);
-}
-.caption:nth-child(2) {
-  -webkit-transform: rotateY(120deg) translateZ(182px);
-  transform: rotateY(120deg) translateZ(182px);
-}
-.caption:nth-child(3) {
-  -webkit-transform: rotateY(240deg) translateZ(182px);
-  transform: rotateY(240deg) translateZ(182px);
-}
+
+
 @-webkit-keyframes 
 carousel {  0%, 17.5% {
  -webkit-transform: translateZ(-182px) rotateY(0);
