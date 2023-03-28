@@ -254,6 +254,12 @@ dt.open + dd{
     .carousel {
       position: absolute;
       top: 65%;
+      width: 200px;
+      perspective: 500px;
+    }
+    .carousel-item img {
+      width: 100%;
+      border: 1px solid black;
     }
     #faq-contain {
       margin: 85rem auto 40rem;
