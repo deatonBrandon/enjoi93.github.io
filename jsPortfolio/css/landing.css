@@ -254,8 +254,8 @@ dt.open + dd{
     .carousel {
       position: absolute;
       top: 65%;
-      width: 200px;
-      perspective: 500px;
+      width: 240px;
+      perspective: 250px;
     }
     .carousel-item img {
       width: 100%;
