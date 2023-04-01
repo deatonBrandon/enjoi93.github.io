@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
+  background-color: black;
 }
 
 #header-contain {
@@ -37,7 +40,8 @@ body {
   margin: 2rem auto;
   display: flex;
   justify-content: center;
-  color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
 }
 
@@ -70,7 +74,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  border: 2px solid black;
+  box-shadow: 0px 0px 20px 1px rgba(175, 0, 0, 0.8);
 }
 .carousel-item:nth-child(1) {
   -webkit-transform: rotateY(0) translateZ(182px);
@@ -123,16 +127,16 @@ carousel {  0%, 17.5% {
 }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
-
 #faq-contain{
+  background-color: yellow;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 12pt;
   line-height: 1.5em;
   padding: 15px;
   text-align: center;
-  margin: 70rem auto 40rem;
+  margin: 50rem auto 0;
+  padding: 30rem 0;
 }
 #faq_head{
   margin-bottom:5px;
@@ -144,12 +148,12 @@ carousel {  0%, 17.5% {
 
 dl{
   margin: 30px auto 60px;
-  max-width: 300px;
+  max-width: 500px;
 }
 
 dt{
   background: #505662;
-  border-left: 8px solid #1F2024;
+  border-left: 4px solid #1F2024;
   color: #B6BCCC;
   font-weight: 600;
   padding: 15px;
@@ -161,7 +165,6 @@ dt{
 
 dt:after, dt:before{ 
   content: "\f078";
-  font-family: fontAwesome;
   position: absolute;
   right: 15px;
   height: 28px;
@@ -215,6 +218,93 @@ dt.open + dd{
   max-height: 300px;
 }
 
+#about_head {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+#about-contain {
+  background: linear-gradient(to bottom, rgb(166, 255, 199), rgb(0, 255, 68));
+  padding: 7rem 0;
+}
+#about-contain p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12pt;
+}
+#about-contain p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/* The "Main" Cluster creates the form appearance
+  #email_form embodies the whole box */
+  #email_form {
+    padding: 10rem 0 10rem 5px;
+    background: linear-gradient(to bottom, rgb(30, 144, 255), rgba(255, 0, 0, 0.6));
+  }
+  /* div is in control of input titles and input boxes */
+  #email_form div {
+    margin-bottom: 5px;
+  }
+  /* Span resembles the red asterisk that is to be replaced with error messages */
+  #email_form div span {
+    margin-left: 5px;
+    color: #f9423d;
+  }
+  /* the label is organizing input titles/boxes to be stacked evenly */
+  #email_form div label {
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12pt;
+  }
+  /* h1 is disconnected from the form and is treated to float solo */
+  #form_h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+  }
+  /* input pushes the text away from the border;removes outline */
+  input {
+    outline: none;
+    padding-left: 1px;
+    width: 200px;
+  }
+  /* questions/comments? removes the ability to resize;adds border;changes font */
+  textarea {
+    resize: none;
+    outline: none;
+    border: none;
+    height: 100px;
+    width: 100%;
+    padding: 3px 0 0 3px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 10pt;
+  }
+  /* sizing the submit button for the form;adds transition that changes radius and background color */
+  #form_btn {
+    width: 80px;
+    height: 35px;
+    margin: 5px auto 0;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #f9423d;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+  /* demonstrates how the transition will change for the form button */
+  #form_btn:hover {
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color: black;
+  }
 /* Footer CSS Begins
   footer 'fixes' box to bottom of page;adds linear flare;extra padding for content */
   footer {
@@ -250,6 +340,7 @@ dt.open + dd{
     color: #afded5;
   }
 
+
   @media screen and (max-width: 768px) {
     .carousel {
       position: absolute;
@@ -262,6 +353,8 @@ dt.open + dd{
       border: 1px solid black;
     }
     #faq-contain {
-      margin: 85rem auto 40rem;
+      margin: 44rem auto 0;
+      padding: 21rem 0;
+      
     }
   }

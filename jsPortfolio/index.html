@@ -13,8 +13,8 @@
 <body>
   <header>
           <ul id="header-contain">
-              <li id="home-icon"><a href="#"><img src="images/HomeICON.png" alt="home icon"></a></li>
-              <li class="menu-btn"><img src="images/hamburgerICON.png" alt="hamburger icon"></li>
+              <li id="home-icon"><a href="#"><img src="images/homeWhite.png" alt="home icon"></a></li>
+              <li class="menu-btn"><img src="images/hamburgerWhite.png" alt="hamburger icon"></li>
           </ul>
 
           <!-- Pushy Menu -->
@@ -27,8 +27,8 @@
                           <button>directory</button>
                           <ul>
                               <li class="pushy-link"><a href="#faq-contain">projects</a></li>
-                              <li class="pushy-link"><a href="#">about</a></li>
-                              <li class="pushy-link"><a href="#">contact</a></li>
+                              <li class="pushy-link"><a href="#about-contain">about</a></li>
+                              <li class="pushy-link"><a href="#form_h1">contact</a></li>
                           </ul>
                       </li>
                   </ul>
@@ -55,14 +55,14 @@
       </div>
 
 
-      <a><div id="faq-contain">
+      <a><div id="faq-contain"></a>
 
-            <h1 id="faq_head">Projects</h1>    
+    <h1 id="faq_head">Projects</h1>
             <dl>
 
               <dt>semester project</dt>
-              <dd>One of the latest projects to date, this website demonstrates basic usage of 
-                JavaScript. Functions are used here to validate forms, create accordion/carousel animations, and format date and time.
+              <dd>One of the latest projects to date, this website demonstrates basic use of 
+                JavaScript. JS functions are used to validate forms, create accordion/carousel animations, and format date and time.
               </dd>
               
               <dt>snake!</dt>
@@ -71,27 +71,68 @@
               </dd>
               
               <dt>clearlight upload</dt>
-              <dd>This was my first freelancing job and it was only to create an uploading feature for SquareSpace.
+              <dd>This was my first freelancing job and it was to create an uploading feature for SquareSpace.
                 SquareSpace doesn't have a plugin for uploading images, so it took a couple of days to research and implement
                 a simple, but effective injection of code to allow uploading images to Google Drive.
               </dd>
 
             </dl>
 
-          </div></a>
+          </div>
 
-          <h1>About Myself</h1>
-          <p>
-            Born in California, raised in Colorado, and lived in every state 
-            in-between.
-          </p>
-          <p>
-            My two biggest activities were soccer and skateboarding, and when I wasn't outside I would do my best to convince Mom to let me stay on the computer (I lost on the sprint, but won the marathon eventually).
-          </p>
-          <p>
+          <a><div id="about-contain"></a>
+            <h1 id="about_head">About Myself</h1>
+                <p>
+                  Born in California, raised in Colorado, and lived in every state between.
+                </p>
+                <p>
+                  My biggest hobbies are coding, gaming, and mountain biking. I'm always keeping the balance between screen time and sun time (but the computer wins in the winter). 
+                </p>
+                <p>
+                  I love what I do and I'm extremely passionate in this field. I have a myriad of work experiences from door-to-door sales, low voltage technical work, to upper management positions and one thing I've found is that all of those skills helped me create a stable foundation to excel on.
+                </p>
+                <p>
+                  The vision for the next 5 years is to grow and thrive within a creative design organization so that I contribute to not only my personal success, but to give back by achieving success in that organization's goals. Within that timeframe I will have also put a serious dent in my CC and student loan debt so that I enjoy life while completing this 5 year plan.
+                </p>
+              </div>
             
-          </p>
 
+          <a><form id="email_form" name="email_form" action="#" method="get"></a>
+            <h1 id="form_h1">Contact Us!</h1>
+              <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" />
+                <span>*</span>
+              </div>
+
+              <div>
+                <label for="email_1">Email Address:</label>
+                <input type="text" id="email_1" name="email_1" />
+                <span>*</span>
+              </div>
+
+              <div>
+                <label for="email_2">Confirm Email Address:</label>
+                <input type="text" id="email_2" name="email_2" />
+                <span>*</span>
+              </div>
+
+              <div>
+                <textarea
+                  name="comments"
+                  placeholder="Do you have any questions/comments?"
+                ></textarea>
+              </div>
+            <div>
+                <label for="bday_date"><p>&#10013; &nbsp; </label>
+                  <input type="text" id="datepicker">
+              </div> 
+              <!-- End of #email_form -->
+              <!-- Submit button for form -->
+              <div>
+                <input type="submit" id="form_btn" value="Submit" />
+              </div>
+      </form>
 
 
 </main>
@@ -108,7 +149,8 @@
 
    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-   <script src="js/landing.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
    <script src="js/app.js"></script>
    <script src="js/pushy.js"></script>
 </body>
