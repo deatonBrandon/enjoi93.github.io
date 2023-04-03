@@ -46,13 +46,6 @@ var typeAnimation = document.getElementById('testTyper');
   });
 
   // calendar function in form
-  $( function() {
-    $( "#datepicker" ).datepicker({
-      changeMonth: true,
-      changeYear: true,
-      yearRange: "1970:2023"
-    });
-  });
 
   $("#form_btn").click( (evt) => {
     // get values user entered in textboxes
