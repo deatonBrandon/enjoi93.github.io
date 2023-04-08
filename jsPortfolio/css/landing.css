@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');*/
+
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Maven+Pro:wght@400;600&family=Montserrat:wght@400;600&display=swap');
 
 * {
@@ -50,8 +50,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 471px;
-  height: 182px;
+  width: 371px;
+  height: 200px;
   -webkit-perspective: 800px;
   perspective: 800px;
   -webkit-transform: translate(-50%, -50%);
@@ -75,8 +75,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 182px;
-  width: 471px;
+  height: 200px;
+  width: 371px;
 }
 .carousel-item:nth-child(1) {
   -webkit-transform: rotateY(0) translateZ(182px);
@@ -366,3 +366,37 @@ dt.open + dd{
       display: none;
     }
   }
+
+  @media screen and (min-width: 769px) {
+    #form_h1 {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    #email_form div span {
+      font-family: "Cinzel", sans-serif;
+      font-weight: 600;
+      font-size: 10pt;
+      color: black;
+    }
+    textarea {
+      max-width: 600px;
+      margin-top: 2rem;
+    }
+    #game_contain {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    #game_contain {
+      display: contents;
+    }
+  }
+
+  /* ************ Mod Log **************
+  * April 7, 2023
+  * - added tablet/desktop media query
+  * - changed height/width of carousel standard dimensions
+  * - form error span has been given a new font and size to end clash with bg color
+  * - temporarily suspended snake! to only be playable on desktop screens
+  */
