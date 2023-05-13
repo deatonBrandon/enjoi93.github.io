@@ -1,0 +1,40 @@
+#game_contain {
+    margin: 0 auto;
+}
+
+.grid {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.snake {
+    background-color: green;
+}
+
+.apple {
+    background-image: url(/images/apple.png);
+}
+
+.start, .restart {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: yellow;
+    height: 2rem;
+    width: 7rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transform: all 1s ;
+}
+.start:hover,
+.restart:hover {
+    border-radius: 5px;
+}

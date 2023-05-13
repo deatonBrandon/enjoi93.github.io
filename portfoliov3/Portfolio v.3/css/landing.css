@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Maven+Pro:wght@400;600&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+}
+
+#header-contain {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 0 0 2rem;
+  list-style: none;
+}
+.menu-btn {
+  position: fixed;
+  right: 2rem;
+  z-index: 1;
+}
+#me-logo {
+  width: min(100%, 150px);
+  margin-top: 5rem;
+  margin-inline: auto;
+}
+#me-logo img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#testTyper {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+#faq-contain{
+  background: linear-gradient(to bottom, black, yellow 40%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  line-height: 1.5em;
+  padding: 15px;
+  text-align: center;
+  margin: 50rem auto 0;
+  padding: 30rem 0;
+}
+#faq_head{
+  margin-bottom:5px;
+}
+.subheading{
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+dl{
+  margin: 30px auto 60px;
+  max-width: 500px;
+}
+
+dt{
+  background: #edeff3;
+  border: 2px solid #1F2024;
+  color: black;
+  font-weight: 600;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  transition: all .5s;
+}
+
+dt:after, dt:before{ 
+  content: "\f078";
+  position: absolute;
+  right: 15px;
+  height: 28px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  
+  transition: all .7s ease-in-out;
+}
+
+dt:before{
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+
+dt:hover {
+  cursor: default;
+}
+
+dt + dd{
+  max-height: 0;
+}
+
+dd{
+  background: #1C1C1C;
+  color: #edeff3;
+  margin: 0;
+  overflow: hidden;
+  padding: 1px 15px;
+  transition: all .5s;
+}
+
+dt.open{
+  background: #0E0C0D;
+  border-color: #0E0C0D;
+  color: #edeff3;
+  margin: -5px;
+}
+
+dt.open:after{
+  transform: rotate(180deg) translateY(-2px);
+}
+dt.open:before{
+  opacity: 1;
+  transform: rotate(-360deg) translateY(-3px);
+}
+
+dt.open + dd{
+  padding: 15px 15px 30px;
+  margin: 0 -5px;
+  max-height: 300px;
+}
+
+#about_head {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+#about-contain {
+  background: linear-gradient(to bottom, yellow, rgb(30, 144, 255));
+  padding: 7rem 0;
+}
+#about-contain p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12pt;
+}
+#about-contain p:not(:last-child) {
+  margin-bottom: 2rem;
+}
