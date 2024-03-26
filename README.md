@@ -1,3 +1,1 @@
-vvvvvvvvvvvvvvvvvvvvv
-THANK YOU FOR VISITING MY GITHUB IO
-^^^^^^^^^^^^^^^^^^^^^
+Thank you for visiting my github IO! These projects are a cultivation of 1st year projects/assignments. Each assignment must start with "enjoi93.github.io" in the URL for each project to be displayed.
